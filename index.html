@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/payment.css">
+  <link rel="icon" href="assets/img/aspect-ratio.svg">
+  <script src="assets/js/payment.js" defer ></script>
+  <title>Alman Usulu</title>
+</head>
+<body>
+  <h1>Alman Usulüne Hoşgeldiniz</h1>
+  <div class="container">
+    <div class="input-container">
+      <div class="cost-input">
+        <h4>Toplam Tutar:</h4>
+        <input class="inputCost" id="totalBill" type="number" value="">
+      </div>
+      <div class="tip-input">
+        <h4>Toplam Bahşiş %:</h4>
+      <input type="number" value="" id="tipBill">
+        </div>
+        <div class="people-input">
+          <h4>Kaç Kişiydiniz?</h4>
+          <input type="number" value="" id="peopleBill" >
+        </div>
+        
+      </div>
+    <div class="result-container">
+      <div class="amount-result">
+        <div class="total-inner">
+          <h2>Bahşiş Tutarı:</h2>
+          <h5>/Kişi Başı</h5>
+        </div>
+        <div class="total-result-inner">
+          <h3 id="personTip"></h3>
+        </div>
+      </div>
+      <div class="total-result">
+        <div class="amount-inner">
+          <h2 >Toplam Tutar:</h2>
+          <h5>/Kişi Başı</h5>
+        </div>
+        <div class="number-inner">
+          <h3 id="resultBill"> </h3>
+        </div>
+      </div>
+      <button id="resultBtn"> Hesapla</button>
+      <button id="clearBtn">Sıfırla</button>
+    </div>
+    </div>
+  </div>
+</body>
+</html>
